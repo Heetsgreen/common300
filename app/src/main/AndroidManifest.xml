@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brainup3.common300">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="상식 100"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Common300">
+        <activity android:name=".ChallengeActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ExplainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizWorldActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizScienceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizMassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizSportsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizLanguageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizNewsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizLiteratureActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuizHistoryActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9838372946627279~7399347403" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eff9ff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="8">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:srcCompat="@drawable/appicon_remove" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_score_now"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malangmalangb"
+                android:gravity="center|right"
+                android:text="최고 점수"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_score_now2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malangmalangb"
+                android:gravity="center|right"
+                android:text="현재 점수"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_score_now3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malangmalangb"
+                android:gravity="center|left"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_score_now4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/malangmalangb"
+                android:gravity="center|left"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/button_image_style_home" />
+
+            <Button
+                android:id="@+id/btn_toHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:background="@drawable/back_btn_tohome"
+                android:fontFamily="@font/malangmalangr"
+                android:text="홈으로"
+                android:textColor="#0070c0"
+                android:textSize="18dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btn_getLife"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:background="@drawable/back_btn_start"
+                android:fontFamily="@font/malangmalangr"
+                android:text="이어하기"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/button_image_style_ad" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="4.2">
+
+    <TextView
+        android:id="@+id/tv_title_explain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#6DC871"
+        android:fontFamily="@font/andante"
+        android:gravity="center_vertical"
+        android:text="   정확한 답변!"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_youknow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/andante"
+        android:gravity="center"
+        android:text="알고 계셨나요?"
+        android:textSize="24dp"
+        app:autoSizeMaxTextSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_mainExplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/andante"
+        android:gravity="center"
+        android:text="용어 접선은 '접촉'을 뜻하는 라틴어 tangens에서 유래했습니다."
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btn_okay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="#6DC871"
+        android:fontFamily="@font/andante"
+        android:text="계속"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_great" />
+</LinearLayout>
